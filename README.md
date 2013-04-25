@@ -1,7 +1,6 @@
-Dungeon
-=======
+#Dungeon
 
-Open source game, similar to Warhammer Quest. Written in Meteor.
+Open source game similar to Warhammer Quest. Written in Meteor.
 
 Dungeon is the working titke.
 

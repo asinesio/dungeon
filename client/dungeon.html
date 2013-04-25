@@ -1,0 +1,50 @@
+<head>
+  <title>Dungeon (BETA)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Andy Sinesio">
+</head>
+
+<body>
+	{{> navbar}}
+	<div class="container">
+		{{> base}}
+	</div>
+</body>
+
+<template name="base">
+	{{#if displayRoomList}}
+		{{> roomList}}
+	{{/if}}
+	{{#if displayRoomEditor}}
+		{{> roomEditor}}
+	{{/if}}
+</template>
+
+<template name="roomList">
+	<h1>Rooms</h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Size</th>
+			</tr>
+		</thead>
+		<tbody>
+		{{#each rooms}}
+			<tr class="room">
+				<td class="roomName"><a>{{name}}</a></td>
+				<td>{{size}}</td>
+			</tr>
+  		{{/each}}
+		</tbody>
+	</table>
+	</ul>
+</template>
+
+<template name="roomEditor">
+	<h1>{{name}}</h1>
+	<h3>{{description}}</h3>
+</template>
+
+
