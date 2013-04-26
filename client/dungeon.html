@@ -39,12 +39,18 @@
   		{{/each}}
 		</tbody>
 	</table>
-	</ul>
 </template>
 
 <template name="roomEditor">
-	<h1>{{name}}</h1>
-	<h3>{{description}}</h3>
+	<h1>Room Editor</h1>
+	<form>
+		<fieldset>
+			<label>Room Name</label>
+		    <input type="text" placeholder="" value="{{name}}">
+			<label>Description</label>
+		    <input type="text" placeholder="" value="{{description}}">
+		</fieldset>
+	</form>
 </template>
 
 
