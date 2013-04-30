@@ -1,0 +1,19 @@
+<template name="rooms">
+	<h1>Rooms</h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Size</th>
+			</tr>
+		</thead>
+		<tbody>
+		{{#each rooms}}
+			<tr class="room">
+				<td class="roomName"><a href="/rooms/{{_id}}">{{name}}</a></td>
+				<td>{{size}}</td>
+			</tr>
+  		{{/each}}
+		</tbody>
+	</table>
+</template>
