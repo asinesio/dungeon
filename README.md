@@ -1,11 +1,8 @@
 #Dungeon
 
-Open source game similar to Warhammer Quest. Written in Meteor.
-
-Dungeon is the working title.  
+Open source game similar to Warhammer Quest. Written in Meteor.  Dungeon is the working title.
 
 #####Note: this is not ready for use yet. You can follow along as it's built.
-
 
 Copyright 2013 Andy Sinesio.
 
