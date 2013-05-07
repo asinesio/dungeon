@@ -1,11 +1,32 @@
 <template name="showRoom">
-	<h1>Room Editor</h1>
-	<form>
-		<fieldset>
-			<label>Room Name</label>
-		    <input type="text" placeholder="" value="{{room.name}}">
-			<label>Description</label>
-		    <input type="text" placeholder="" value="{{room.description}}">
-		</fieldset>
-	</form>
+	<div class="row">
+		<div class="span4">
+			<h1>Room Editor</h1>
+			<form id="roomFields">
+				<fieldset>
+					<label>Room Name</label>
+				    <input id="roomName" type="text" placeholder="" value="{{room.name}}">
+					<label>Description</label>
+				    <input id="roomDescription" type="text" placeholder="" value="{{room.description}}">
+					<label>Width</label>
+				    <input id="roomWidth" type="text" placeholder="" value="{{room.width}}">
+					<label>Height</label>
+				    <input id="roomHeight" type="text" placeholder="" value="{{room.height}}">
+					
+					
+				</fieldset>
+			</form>
+			<button id="saveRoom" class='btn'>Save</button>
+		</div>
+		<div class="span8">
+		    {{#constant}}
+			<div id="roomViewWrapper" class="well">
+
+
+
+
+			</div>
+		    {{/constant}}
+			
+		</div>
 </template>
